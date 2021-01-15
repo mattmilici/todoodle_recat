@@ -7,7 +7,7 @@ function App() {
 	return (
 		<div className="bg-todoodleGray p-6 md:p-20 text-white h-screen w-full">
 			<div className=" mx-1 my-12 md:mx-32 md:my-12 lg:mx-56 lg:my-24">
-				<h1 className="text-5xl md:text-8xl font-bold mb-12 text-white">
+				<h1 className="text-5xl md:text-8xl font-bold mb-12 text-todoodleBlack">
 					Todoodle
 				</h1>
 				<h1 className="mb-12 text-xl ">
