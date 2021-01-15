@@ -12,7 +12,7 @@ function App() {
 				<h1 className="mb-12 text-2xl ">
 					What do you need to todoodle today?.... |
 				</h1>
-				<h1 className="mb-3 text-xl">There's still time!</h1>
+				<h1 className="mb-3 text-xl">you've got time</h1>
 				<TimerComponent />
 				<div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
 					<p class="text-base font-medium  font-roboto">
