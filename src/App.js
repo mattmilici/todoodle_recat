@@ -1,7 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
 import TimerComponent from "../src/components/Timer/index";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 function App() {
 	return (
@@ -15,12 +13,12 @@ function App() {
 				</h1>
 				<h1 className="mb-3 text-xl">you've got time</h1>
 				<TimerComponent />
-				<div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-					<p class="text-base font-medium  font-roboto">
+				<div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
+					<p className="text-base font-medium  font-roboto">
 						Sign up to get notified when it’s ready.
 					</p>
-					<form action="#" method="POST" class="mt-3 sm:flex">
-						<label for="email" class="sr-only">
+					<form name="contact" method="post" className="mt-3 sm:flex">
+						<label for="email" className="sr-only">
 							Email
 						</label>
 						<input
@@ -32,15 +30,14 @@ function App() {
 						/>
 						<button
 							type="submit"
-							class="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md  bg-todoodleGreen shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+							className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md  bg-todoodleGreen shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
 						>
 							Notify me
 						</button>
-						{/* <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} /> */}
 					</form>
-					<p class="mt-3 text-sm ">
+					<p className="mt-3 text-sm ">
 						We care about the protection of your data. Read our{" "}
-						<a href="#" class="font-medium text-white-900 underline">
+						<a href="#" className="font-medium text-white-900 underline">
 							Privacy Policy
 						</a>
 						.
