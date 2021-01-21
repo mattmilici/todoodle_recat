@@ -1,16 +1,35 @@
 import "./App.css";
 import TimerComponent from "../src/components/Timer/index";
+import Typical from "react-typical";
 
 function App() {
 	return (
-		<div className="bg-todoodleGray p-6 md:p-20 text-white h-screen w-full">
+		<div className="bg-white p-6 md:p-20 text-white h-screen w-full">
 			<div className=" mx-1 my-12 md:mx-32 md:my-12 lg:mx-56 lg:my-24">
 				<h1 className="text-5xl md:text-8xl font-bold mb-12 text-todoodleBlack">
 					Todoodle
 				</h1>
-				<h1 className="mb-12 text-xl ">
-					What do you need to todoodle today?.... |
-				</h1>
+				<h1 className="mb-2 text-2xl ">What do you need to todoodle today?</h1>
+				<p id="animated Text" className=" mb-12 text-2xl">
+					I need to{" "}
+					<Typical
+						className=" text-2xl "
+						loop={Infinity}
+						wrapper="r"
+						steps={[
+							"go for a run...",
+							1000,
+							" call mom",
+							1000,
+							"book my hotel...",
+							1000,
+							"pick up groceries...",
+							1000,
+							"update my resume...",
+							1000,
+						]}
+					/>
+				</p>
 				<h1 className="mb-3 text-xl">you've got time</h1>
 				<TimerComponent />
 				<div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
@@ -25,12 +44,12 @@ function App() {
 							type="text"
 							name="email"
 							id="email"
-							className="block w-full py-3 pl-2 rounded-md placeholder-gray-500 shadow-sm sm:flex-1 border-black"
+							className="border-todoodleBlack block w-full py-3 pl-2 rounded-md placeholder-gray-800 shadow-sm sm:flex-1 "
 							placeholder="Enter your email"
 						/>
 						<button
 							type="submit"
-							className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md  bg-todoodleGreen shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+							className="mt-3 w-full px-6 py-3 border text-todoodleWhite border-transparent text-base font-medium rounded-md  bg-todoodleBlack shadow-sm hover:bg-gray-800 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
 						>
 							Notify me
 						</button>
