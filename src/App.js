@@ -15,7 +15,7 @@ function App() {
 				<p id="animated Text" className=" mb-12 text-xl md:text-2xl">
 					I need to{" "}
 					<Typical
-						className=" text-2xl "
+						className="text-xl  text-2xl "
 						loop={Infinity}
 						wrapper="r"
 						steps={[
