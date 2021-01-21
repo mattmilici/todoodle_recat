@@ -9,8 +9,10 @@ function App() {
 				<h1 className="text-7xl md:text-8xl font-bold mb-12 text-todoodleBlack">
 					Todoodle
 				</h1>
-				<h1 className="mb-2 text-2xl ">What do you need to todoodle today?</h1>
-				<p id="animated Text" className=" mb-12 text-2xl">
+				<h1 className="mb-2 text-xl md:text-2xl ">
+					What do you need to todoodle today?
+				</h1>
+				<p id="animated Text" className=" mb-12 text-xl md:text-2xl">
 					I need to{" "}
 					<Typical
 						className=" text-2xl "
