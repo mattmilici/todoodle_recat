@@ -6,7 +6,7 @@ function App() {
 	return (
 		<div className="bg-white p-6 md:p-20 text-white h-screen w-full">
 			<div className=" mx-1 my-12 md:mx-32 md:my-12 lg:mx-56 lg:my-24">
-				<h1 className="text-5xl md:text-8xl font-bold mb-12 text-todoodleBlack">
+				<h1 className="text-7xl md:text-8xl font-bold mb-12 text-todoodleBlack">
 					Todoodle
 				</h1>
 				<h1 className="mb-2 text-2xl ">What do you need to todoodle today?</h1>
