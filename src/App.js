@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import TimerComponent from "../src/components/Timer/index";
 import Typical from "react-typical";
