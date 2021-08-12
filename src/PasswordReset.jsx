@@ -40,7 +40,7 @@ function PasswordReset() {
                             New Password
                         </label>
                         <input
-                            type="text"
+                            type="password"
                             className="border-todoodleBlack block w-full py-3 pl-2 rounded-md placeholder-gray-800 shadow-sm sm:flex-1 "
                             placeholder="Enter a new password"
                             value={newPassword}
