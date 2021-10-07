@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import TimerComponent from "../src/components/Timer/index";
 import Typical from "react-typical";
+import { ReactComponent as ReactLogo } from './img/download_appstore.svg';
 
 function App() {
 	const [notified, setnotified] = React.useState(true);
@@ -41,42 +42,15 @@ function App() {
 				<h1 className="mb-3 text-xl">you've got time</h1>
 				<TimerComponent />
 				<div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-					{notified ? (
-						<div>
-							<p className="text-base font-medium  font-roboto">
-								Sign up to get notified when it’s ready.
-							</p>
-							<form name="contact" method="post" className="mt-3 sm:flex">
-								<label for="email" className="sr-only">
-									Email
-								</label>
-								<input
-									type="text"
-									name="email"
-									id="email"
-									className="border-todoodleBlack block w-full py-3 pl-2 rounded-md placeholder-gray-800 shadow-sm sm:flex-1 "
-									placeholder="Enter your email"
-								/>
-								<button
-									onClick={changeState}
-									type="submit"
-									className="mt-3 w-full px-6 py-3 border text-todoodleWhite border-transparent text-base font-medium rounded-md  bg-todoodleBlack shadow-sm hover:bg-gray-800 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
-								>
-									Notify me
-								</button>
-							</form>
-						</div>
-					) : (
-						<div>
-							<h1 className="text-xl">
-								You're all set! We'll reach out when the app is ready to go!
-							</h1>
-						</div>
-					)}
+					<div className="hover:cursor-pointer" onClick={() => {
+						window.open("https://apps.apple.com/us/app/todoodle-do-more-together/id1551371631")
+					}}>
+						<ReactLogo />
+					</div>
 
 					<p className="mt-3 text-sm ">
 						We care about the protection of your data. Read our{" "}
-						<a href="#" className="font-medium text-white-900 underline">
+						<a href="/privacy.pdf" target="_blank" className="font-medium text-white-900 underline">
 							Privacy Policy
 						</a>
 						.
